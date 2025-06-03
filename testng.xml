@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="PlaywrightSuite">
+    <parameter name="browser" value="chrome" />
+    <test name="BookingTests">
+        <classes>
+            <class name="ge.tbc.itacademy.tests.DataDrivenTests"/>
+            <class name="ge.tbc.itacademy.tests.UIResponsivenessTests"/>
+            <class name="ge.tbc.itacademy.tests.BookingMockTests"/>
+            <class name="ge.tbc.itacademy.tests.CoreFunctionalityTests"/>
+        </classes>
+    </test>
+</suite>
