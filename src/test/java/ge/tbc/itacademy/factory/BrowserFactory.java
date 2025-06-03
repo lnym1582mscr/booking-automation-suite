@@ -8,9 +8,9 @@ public class BrowserFactory {
     public static Browser getBrowser(Playwright playwright, String browserName) {
         switch (browserName.toLowerCase()) {
             case "chrome":
-                return playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+                return playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(true));
             case "webkit":
-                return playwright.webkit().launch(new BrowserType.LaunchOptions().setHeadless(false));
+                return playwright.webkit().launch(new BrowserType.LaunchOptions().setHeadless(true));
             default:
                 throw new IllegalArgumentException("Unsupported browser: " + browserName);
         }
